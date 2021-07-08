@@ -1,0 +1,20 @@
+.foooter_container {
+  display: flex;
+  justify-content: center;
+  background-color: #1d2020;
+  margin: 0;
+  z-index: 99;
+  /* box-shadow: ; */
+}
+.footer-link {
+  color: #efe6e7;
+  margin: 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}

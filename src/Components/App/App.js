@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import Navbar from "../Nav bar/Navbar";
 import Landing from "../Landing/Landing";
+import Footer from "../Footer/Footer";
+import ChallengeSection from "../ChallengeSection/ChallengeSection";
 function App() {
   return (
     <div className="App">
@@ -9,9 +11,10 @@ function App() {
       <Navbar />
       {/* landing page */}
       <Landing />
-      <h1>Hello</h1>
       {/* challnege page */}
+      <ChallengeSection></ChallengeSection>
       {/* footer */}
+      <Footer></Footer>
     </div>
   );
 }

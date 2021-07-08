@@ -7,6 +7,7 @@
   padding: 0 52px;
   font-family: "bangers", cursive;
   margin: 0;
+  background-color: rgb(105, 102, 97);
   flex-wrap: wrap;
 }
 .landing-header {
