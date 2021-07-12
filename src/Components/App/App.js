@@ -7,8 +7,7 @@ import Nav from "../Nav/Navbar";
 
 import "./App.css";
 
-
-const TotalTime = 60;
+const TotalTime = 2;
 const DefaultState = {
   selectedParagraph: "Hello World!",
   testInfo: [],

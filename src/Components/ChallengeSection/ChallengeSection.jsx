@@ -4,7 +4,7 @@ import TestContiner from "../TestConatiner/TestContiner";
 function ChallengeSection({
   selectedParagrpah,
   words,
-  charcters,
+  characters,
   wpm,
   timeRemaining,
   timerStarted,
@@ -21,7 +21,7 @@ function ChallengeSection({
         timerStarted={timerStarted}
         words={words}
         onInputChange={onInputChange}
-        charcters={charcters}
+        characters={characters}
         selectedParagrpah={selectedParagrpah}
         wpm={wpm}
         startAgain={startAgain}

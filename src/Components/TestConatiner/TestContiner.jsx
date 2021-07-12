@@ -1,13 +1,13 @@
 import React from "react";
 import "./TestContiner.css";
-import TestAgain from "../TestAgain/TestAgain";
+import TestAgain from "./../TestAgain/TestAgain";
 import TypingChallengeContainer from "../Typing-challenge-container/Typing-challenge-container";
 function TestContiner({
   selectedParagraph,
   testInfo,
   onInputChange,
   words,
-  charcters,
+  characters,
   wpm,
   timeRemaining,
   timerStarted,
@@ -23,7 +23,7 @@ function TestContiner({
             timeRemaining={timeRemaining}
             timerStarted={timerStarted}
             words={words}
-            charcters={charcters}
+            characters={characters}
             wpm={wpm}
             selectedParagrpah={selectedParagraph}
             startAgain={startAgain}
@@ -31,12 +31,7 @@ function TestContiner({
         </div>
       ) : (
         <div className="try-again-cont">
-          <TestAgain
-            words={words}
-            charcters={charcters}
-            startAgain={startAgain}
-            wpm={wpm}
-          />
+          <TestAgain characters={characters} words={words} wpm={wpm}  startAgain={startAgain}/>
         </div>
       )}
     </div>

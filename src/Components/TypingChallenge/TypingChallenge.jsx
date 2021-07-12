@@ -25,7 +25,7 @@ const TypingChallenge = ({
         <div className="textarea-left ">
           <div className="textarea test-paragraph">
             {/* {selectedParagraph} */}
-            {console.log("test info is ", testInfo)}
+
             {testInfo.map((individualLetterInfo, index) => (
               <TestLetter
                 key={index}

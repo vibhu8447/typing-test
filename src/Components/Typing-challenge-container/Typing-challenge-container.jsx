@@ -6,7 +6,7 @@ import Typingchallenge from "./../TypingChallenge/TypingChallenge";
 function Typingchallengecontainer({
   selectedParagrpah,
   words,
-  charcters,
+  characters,
   wpm,
   timeRemaining,
   timerStarted,
@@ -19,7 +19,7 @@ function Typingchallengecontainer({
       <div className="detail-container">
         <ChallengeDetailsCards cardName="Words" cardValue={words} />
 
-        <ChallengeDetailsCards cardName="Characters" cardValue={charcters} />
+        <ChallengeDetailsCards cardName="Characters" cardValue={characters} />
         <ChallengeDetailsCards cardName="Speed" cardValue={wpm} />
       </div>
       {/*  the real challeneg*/}

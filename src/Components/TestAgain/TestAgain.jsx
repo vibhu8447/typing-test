@@ -1,10 +1,9 @@
 import React from "react";
 import "./TestAgain.css";
 
-const TryAgain = ({ words, characters, wpm, startAgain }) => {
-  const url = "theleanprogrammer.com";
+const TestAgain = ({ words, characters, wpm, startAgain }) => {
   return (
-    <div data-aos="fade-up" className="try-again-container">
+    <div className="try-again-container">
       <h1>Test Results</h1>
 
       <div className="result-container">
@@ -26,34 +25,9 @@ const TryAgain = ({ words, characters, wpm, startAgain }) => {
         >
           Re-try
         </button>
-        <button
-          onClick={() =>
-            window.open(
-              "https://www.facebook.com/sharer/sharer.php?u=" + url,
-              "facebook-share-dialog",
-              "width=800,height=600"
-            )
-          }
-          className="end-buttons share-btn"
-        >
-          Share
-        </button>
-        <button
-          onClick={() =>
-            window.open(
-              "https://twitter.com/intent/tweet?text=Check%20this%20out%20" +
-                url,
-              "Twitter",
-              "width=800,height=600"
-            )
-          }
-          className="end-buttons tweet-btn"
-        >
-          Tweet
-        </button>
       </div>
     </div>
   );
 };
 
-export default TryAgain;
+export default TestAgain;
