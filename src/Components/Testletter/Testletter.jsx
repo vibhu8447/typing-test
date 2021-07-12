@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testletter.css";
+import "./TestLetter.css";
 
 const TestLetter = ({ individualLetterInfo }) => {
   const statusClassName = {

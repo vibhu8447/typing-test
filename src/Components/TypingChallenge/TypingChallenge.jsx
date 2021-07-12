@@ -1,6 +1,8 @@
 import React from "react";
-import Testletter from "../Testletter/Testletter";
+// import TestLetter from "../TestLetter/TestLetter";
+import TestLetter from "../TestLetter/TestLetter";
 import "./TypingChallenge.css";
+
 const TypingChallenge = ({
   testInfo,
   onInputChange,
@@ -23,8 +25,9 @@ const TypingChallenge = ({
         <div className="textarea-left ">
           <div className="textarea test-paragraph">
             {/* {selectedParagraph} */}
+            {console.log("test info is ", testInfo)}
             {testInfo.map((individualLetterInfo, index) => (
-              <Testletter
+              <TestLetter
                 key={index}
                 individualLetterInfo={individualLetterInfo}
               />

@@ -10,6 +10,8 @@ function Typingchallengecontainer({
   wpm,
   timeRemaining,
   timerStarted,
+  testInfo,
+  onInputChange,
 }) {
   return (
     <div className="typing-challenge-container">
@@ -22,7 +24,13 @@ function Typingchallengecontainer({
       </div>
       {/*  the real challeneg*/}
       <div className="typewriter-conatiner">
-        <Typingchallenge  timeRemaining={timeRemaining} timerStarted={timerStarted} selectedParagrpah={selectedParagrpah} />
+        <Typingchallenge
+          timeRemaining={timeRemaining}
+          timerStarted={timerStarted}
+          selectedParagrpah={selectedParagrpah}
+          testInfo={testInfo}
+          onInputChange={onInputChange}
+        />
       </div>
     </div>
   );
